@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: two-speed
+    runtime: python
+    buildCommand: "true"
+    startCommand: python3 server.py
+    envVars:
+      - key: NEBIUS_API_KEY
+        sync: false

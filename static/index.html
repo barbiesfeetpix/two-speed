@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Two Speed</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <main>
+    <p class="kicker">Nemotron Nano first. Super only if the behavior is wrong.</p>
+    <h1>Two Speed</h1>
+    <p class="lede">Paste one Python function. Nano on Nebius Token Factory reviews it. Super is called only when Nano reports a high-severity behavior bug, or when Nano's reply is not JSON. The page shows which model ran, how long it took, and the token counts.</p>
+    <form id="review">
+      <label>Python
+        <textarea name="source" required maxlength="12000" rows="12" spellcheck="false">def discount(price, percent):
+    return price - percent</textarea>
+      </label>
+      <button type="submit">Review</button>
+      <p id="status" role="status"></p>
+    </form>
+    <section id="out" hidden></section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
